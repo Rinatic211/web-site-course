@@ -1,0 +1,16 @@
+title: web-site
+description: 'Сайт-визитка обменного курса криптовалют '
+template:
+  repo: web-site-template
+  name: web-site
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
